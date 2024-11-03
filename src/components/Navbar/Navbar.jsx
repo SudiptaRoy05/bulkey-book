@@ -1,12 +1,18 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
   const links = (
     <>
       <li>
-        <a>Home</a>
+        <NavLink to='/' >Home</NavLink>
       </li>
 
       <li>
-        <a>Listed Books</a>
+      <NavLink to='/listedBook' >Listed Book</NavLink>
+      </li>
+
+      <li>
+      <NavLink to='/dashboard' >Dashboard</NavLink>
       </li>
     </>
   );
